@@ -171,6 +171,13 @@
 
               <time title="Created: 2020-04-02 23:36:15" itemprop="dateCreated datePublished" datetime="2020-04-02T23:36:15+08:00">2020-04-02</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-04-03 00:30:02" itemprop="dateModified" datetime="2020-04-03T00:30:02+08:00">2020-04-03</time>
+              </span>
 
           
             <span id="/2020/04/02/ubuntu%E4%B8%8B%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/" class="post-meta-item leancloud_visitors" data-flag-title="ubuntu下实用软件" title="Views">
@@ -190,7 +197,29 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          
+          <h3 id="1-Remarkable"><a href="#1-Remarkable" class="headerlink" title="1.Remarkable"></a>1.Remarkable</h3><ul>
+<li><p>简介</p>
+<p>  <strong>markdown</strong>编辑器，自我感觉比<strong>typora</strong>好用</p>
+</li>
+<li><p>安装</p>
+<p>  在这里<a href="https://remarkableapp.github.io/linux/download.html" target="_blank" rel="noopener">Remarkable</a>下载<strong>remarkable_1.87_all.deb</strong>文件，然后在下载目录打开终端输入:</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg -i remarkable_1.87_all.deb</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>遇到的问题</p>
+<p>  直接执行以上指令会提示缺少依赖项</p>
+</li>
+<li><p>解决方法</p>
+<p>  补上依赖项：</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install -f</span><br></pre></td></tr></table></figure>
+
+<p>  再次解压</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg -i remarkable_1.87_all.deb</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>实际效果</p>
+<p>   <img src="/2020/04/02/ubuntu%E4%B8%8B%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/remarkable.png" alt="remarkable"></p>
+</li>
+</ul>
+
       
     </div>
 
