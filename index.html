@@ -168,10 +168,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-04-09 01:18:44 / Modified: 01:32:57" itemprop="dateCreated datePublished" datetime="2020-04-09T01:18:44+08:00">2020-04-09</time>
+              <time title="Created: 2020-04-09 01:18:44" itemprop="dateCreated datePublished" datetime="2020-04-09T01:18:44+08:00">2020-04-09</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-04-10 01:24:48" itemprop="dateModified" datetime="2020-04-10T01:24:48+08:00">2020-04-10</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -219,9 +225,39 @@
 <p>watch -n 1 -d nvidia-smi     #每隔0.1秒刷新一次</p>
 <h3 id="4-logging模块"><a href="#4-logging模块" class="headerlink" title="4  logging模块"></a>4  logging模块</h3><p><a href="https://www.cnblogs.com/xianyulouie/p/11041777.html" target="_blank" rel="noopener">https://www.cnblogs.com/xianyulouie/p/11041777.html</a></p>
 <h3 id="5-路径问题-导入import-无效"><a href="#5-路径问题-导入import-无效" class="headerlink" title="5 路径问题 导入import 无效"></a>5 路径问题 导入import 无效</h3><p><a href="https://www.cnblogs.com/dingchuan/p/9381769.html" target="_blank" rel="noopener">https://www.cnblogs.com/dingchuan/p/9381769.html</a></p>
-<h3 id="6下载文件的位置"><a href="#6下载文件的位置" class="headerlink" title="6下载文件的位置"></a>6下载文件的位置</h3><p> <img src="/2020/04/09/pointnet%E8%B0%83%E8%AF%95%E7%AC%94%E8%AE%B0/pointnet_1.png" alt="pointnet_1"></p>
+<h3 id="6下载文件的位置"><a href="#6下载文件的位置" class="headerlink" title="6下载文件的位置"></a>6下载文件的位置</h3><p><img src="/2020/04/09/pointnet%E8%B0%83%E8%AF%95%E7%AC%94%E8%AE%B0/1.png" alt="1"></p>
 <h3 id="7-输入运行指令问题"><a href="#7-输入运行指令问题" class="headerlink" title="7 输入运行指令问题"></a>7 输入运行指令问题</h3><p>python train_classification.py –batchSize=2 –nepoch=1 –dataset=E:\CG-pointcloud\pointnet.pytorch-master\shapenetcore_partanno_segmentation_benchmark_v0 –nepoch=5</p>
-<h2 id="未完待续！！！"><a href="#未完待续！！！" class="headerlink" title="未完待续！！！"></a>未完待续！！！</h2>
+<h3 id="8-sys-path"><a href="#8-sys-path" class="headerlink" title="8 sys.path"></a>8 sys.path</h3><p><img src="/2020/04/09/pointnet%E8%B0%83%E8%AF%95%E7%AC%94%E8%AE%B0/2.png" alt="2"><br>是一个list，list[0]是当前文件目录，所以用sys.path[0]</p>
+<h3 id="9-torch-bmm"><a href="#9-torch-bmm" class="headerlink" title="9 torch.bmm"></a>9 torch.bmm</h3><p><img src="/2020/04/09/pointnet%E8%B0%83%E8%AF%95%E7%AC%94%E8%AE%B0/3.png" alt="3"><br><img src="/2020/04/09/pointnet%E8%B0%83%E8%AF%95%E7%AC%94%E8%AE%B0/4.png" alt="4"></p>
+<h3 id="10-music"><a href="#10-music" class="headerlink" title="10 music"></a>10 music</h3><p><a href="https://github.com/xtuJSer/CoCoMusic/releases" target="_blank" rel="noopener">https://github.com/xtuJSer/CoCoMusic/releases</a></p>
+<h3 id="11-一直报错"><a href="#11-一直报错" class="headerlink" title="11 一直报错"></a>11 一直报错</h3><p><img src="/2020/04/09/pointnet%E8%B0%83%E8%AF%95%E7%AC%94%E8%AE%B0/5.png" alt="5"><br>“python.linting.pylintArgs”:[“–disable-msg=E1101”]</p>
+<h3 id="12-插件"><a href="#12-插件" class="headerlink" title="12 插件"></a>12 插件</h3><p><img src="/2020/04/09/pointnet%E8%B0%83%E8%AF%95%E7%AC%94%E8%AE%B0/6.png" alt="6"><br><img src="/2020/04/09/pointnet%E8%B0%83%E8%AF%95%E7%AC%94%E8%AE%B0/7.png" alt="7"></p>
+<h3 id="13-cls"><a href="#13-cls" class="headerlink" title="13 cls"></a>13 cls</h3><p><img src="/2020/04/09/pointnet%E8%B0%83%E8%AF%95%E7%AC%94%E8%AE%B0/8.png" alt="8"></p>
+<p>一列16个 class 进行softmax </p>
+<p>tensor([[-0.3344, -0.0365,  0.5273,  0.2711,  0.3416, -0.1934,  0.0133, -0.1942,<br>         -0.1118,  0.0846,  0.2330, -0.0333, -0.1994, -0.3644, -0.0885, -0.0166],<br>        [ 0.1308, -0.1778, -0.0613, -0.0847,  0.0860,  0.1338,  0.1497,  0.2780,<br>          0.2810,  0.0944, -0.0544, -0.2960,  0.0501, -0.1347,  0.0561, -0.1835]],<br>       device=’cuda:0’, grad_fn=<AddmmBackward>)<br>2020-04-09 18:52:26,145 - model.py[line:251] - INFO: The x3 type is:&lt;class ‘torch.Tensor’&gt;,shape is:torch.Size([2, 16])<br>tensor([[-3.1304, -2.8325, -2.2687, -2.5249, -2.4544, -2.9894, -2.7826, -2.9902,<br>         -2.9078, -2.7114, -2.5630, -2.8293, -2.9953, -3.1604, -2.8845, -2.8126],<br>        [-2.6714, -2.9800, -2.8635, -2.8869, -2.7162, -2.6684, -2.6525, -2.5242,<br>         -2.5212, -2.7077, -2.8566, -3.0982, -2.7521, -2.9369, -2.7461, -2.9857]],<br>       device=’cuda:0’, grad_fn=<LogSoftmaxBackward>)</LogSoftmaxBackward></AddmmBackward></p>
+<h3 id="14-loss"><a href="#14-loss" class="headerlink" title="14 loss"></a>14 loss</h3><p>loss = F.nll_loss(pred, target)<br>INFO: tensor(2.6180, device=’cuda:0’, grad_fn=<NllLossBackward>)</NllLossBackward></p>
+<h3 id="15-torch-norm"><a href="#15-torch-norm" class="headerlink" title="15 torch.norm"></a>15 torch.norm</h3><p><a href="https://blog.csdn.net/goodxin_ie/article/details/84657975" target="_blank" rel="noopener">https://blog.csdn.net/goodxin_ie/article/details/84657975</a></p>
+<h3 id="16-data"><a href="#16-data" class="headerlink" title="16 data"></a>16 data</h3><p><img src="/2020/04/09/pointnet%E8%B0%83%E8%AF%95%E7%AC%94%E8%AE%B0/9.png" alt="9"><br> data??? torch to numpy???</p>
+<h3 id="17-max"><a href="#17-max" class="headerlink" title="17 max"></a>17 max</h3><p><img src="/2020/04/09/pointnet%E8%B0%83%E8%AF%95%E7%AC%94%E8%AE%B0/10.png" alt="10"></p>
+<h3 id="18-eq"><a href="#18-eq" class="headerlink" title="18 eq"></a>18 eq</h3><p><img src="/2020/04/09/pointnet%E8%B0%83%E8%AF%95%E7%AC%94%E8%AE%B0/11.png" alt="11"><br><img src="/2020/04/09/pointnet%E8%B0%83%E8%AF%95%E7%AC%94%E8%AE%B0/12.png" alt="12"></p>
+<p>a = torch.Tensor([2,4])<br>b = torch.Tensor([2,4])<br>c = a.eq(b) # tensor([1, 1], dtype=torch.uint8)<br>d = c.sum() # tensor(2)</p>
+<p>a = torch.Tensor([2,4])<br>b = torch.Tensor([2,5])<br>c = a.eq(b) # tensor([1, 0], dtype=torch.uint8)<br>d = c.sum() # tensor(1)</p>
+<h3 id="19-eval"><a href="#19-eval" class="headerlink" title="19 eval()"></a>19 eval()</h3><p>classifier.eval()</p>
+<h3 id="20-view"><a href="#20-view" class="headerlink" title="20 view"></a>20 view</h3><p>我一直在想整体合并不会有问题吗</p>
+<p>a = torch.rand(2,3,4)<br>print(a.shape)<br>print(a)<br>b = a.view(-1,4)<br>print(b.shape)<br>print(b)</p>
+<p>c = F.log_softmax(b.view(-1,4), dim=-1)<br>print(c.shape)<br>print(c)</p>
+<p>d = c.view(2,3,4)<br>print(d.shape)<br>print(d)</p>
+<p><img src="/2020/04/09/pointnet%E8%B0%83%E8%AF%95%E7%AC%94%E8%AE%B0/13.png" alt="13"></p>
+<h3 id="21-result"><a href="#21-result" class="headerlink" title="21 result"></a>21 result</h3><p><img src="/2020/04/09/pointnet%E8%B0%83%E8%AF%95%E7%AC%94%E8%AE%B0/14.png" alt="14"></p>
+<p>python show_seg.py –model=seg/seg_model_Chair_0.pth –idx=4 –class_choice=’Motorbike’</p>
+<h3 id="22-安装opencv"><a href="#22-安装opencv" class="headerlink" title="22 安装opencv"></a>22 安装opencv</h3><p>pip install OpenCV-python -i <a href="https://pypi.tuna.tsinghua.edu.cn/simple" target="_blank" rel="noopener">https://pypi.tuna.tsinghua.edu.cn/simple</a><br>pip install matplotlib -i <a href="https://pypi.tuna.tsinghua.edu.cn/simple" target="_blank" rel="noopener">https://pypi.tuna.tsinghua.edu.cn/simple</a></p>
+<h3 id="23-git"><a href="#23-git" class="headerlink" title="23 git"></a>23 git</h3><p>git init pointnet.pytorch<br>cd pointnet.pytorch</p>
+<p>git add .<br>git add –all</p>
+<p>git commit -m “pointnet”</p>
+<p>git remote add origin  <a href="https://github.com/mengxingshifen1218/pointnet.pytorch" target="_blank" rel="noopener">https://github.com/mengxingshifen1218/pointnet.pytorch</a></p>
+<p>git push origin master</p>
+<p> <a href="https://zhuanlan.zhihu.com/p/44181150" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/44181150</a></p>
+
       
     </div>
 
